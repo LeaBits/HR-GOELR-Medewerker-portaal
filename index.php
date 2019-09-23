@@ -8,10 +8,10 @@
         $title = (isset($item['title']))? '<h5 class="card-title">'.$item['title'].'</h5>' : '';
         $description = (isset($item['description']))? '<p class="card-text">'.$item['description'].'</p>' : '';
         $linkText = (isset($item['linkText']))? $item['linkText'] : 'Klik hier';
-        $link = (isset($item['link']))? '<a href="'.$item['link'].'" target="_blank" class="btn btn-dark">'.$linkText.'</a>' : '';
+        $link = (isset($item['link']))? '<a href="'.$item['link'].'" target="_blank" class="btn btn-dark stretched-link">'.$linkText.'</a>' : '';
         echo '<div class="col-md-4 mt-1 mb-1">
             <div class="card '.$class.'">
-                <div class="card-top card-body">'.$icon.'</div>
+                <div class="card-top card-img-top card-body">'.$icon.'</div>
                 <div class="card-body">
                     '.$title.$description.$link.'
                 </div>
@@ -21,12 +21,18 @@
 
     $itemsHome = array(
         0 => array(
-            'icon' => 'fas fa-address-card',
+            'icon' => 'far fa-laugh-beam',
             'title' => 'Persoonlijk blog',
             'description' => 'In mijn blog post ik over het leven als startende tech docent. Daarnaast plaats ik ook geregeld eigen \'tutorials\' over zelf gemaakte projecten.',
             'link' => 'https://blog.ldegoeij.nl'
         ),
         1 => array(
+            'icon' => 'fas fa-cube',
+            'title' => 'Clever',
+            'description' => 'Documentatie en bewijzen voor project sprints en building blocks.',
+            'link' => 'https://cle.cmgt.hr.nl'
+        ),
+        2 => array(
             'icon' => 'fab fa-github',
             'title' => 'CMGT GitHub account',
             'description' => 'Op het GitHub account van CMGT kun je lesmateriaal en verschillende projecten vinden binnen de opleiding.',
@@ -36,13 +42,13 @@
 
     $itemsTutorials = array(
         0 => array(
-            'icon' => 'fas fa-code',
+            'icon' => 'fab fa-python',
             'title' => 'AdaFruit CPX CircuitPython',
             'description' => 'In deze tutorial zie hoe je CircuitPython laad op jouw Circuit Playground (Express).',
             'link' => 'https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart'
         ),
         1 => array(
-            'icon' => 'fas fa-code',
+            'icon' => 'fab fa-js',
             'title' => 'AdaFruit CPX terug naar MakeCode',
             'description' => 'Mocht je CircuitPython op jouw Circuit Playground (Express) hebben geladen en wil je weer terug naar MakeCode?',
             'link' => 'https://learn.adafruit.com/adafruit-circuit-playground-express/uninstalling-circuitpython'
@@ -85,9 +91,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#tutorials">Tutorials</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#socials">Socials</a>
-                        </li>
                     </ul>
                 </div>
             </div>
@@ -114,6 +117,7 @@
             <div class="container mb-5">
                 <div class="row">
                     <div class="col-12"><h2>Tutorials</h2></div>
+
                     <?php
                         foreach ($itemsTutorials as $item) {
                             createCard($item, 'tutorials');
@@ -123,18 +127,6 @@
                 </div>
             </div>
         </tutorials>
-
-        <socials id="socials">
-            <div class="container mb-5">
-                <div class="row">
-                    <div class="col-12"><h2>Socials</h2></div>
-                    <div class="col-12">
-                        <!-- LightWidget WIDGET -->
-                        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/c485a076a92a525297a46de12c7cde2a.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width:100%;border:0;overflow:hidden;"></iframe>
-                    </div>
-                </div>
-            </div>
-        </socials>
 
     </div>
 
