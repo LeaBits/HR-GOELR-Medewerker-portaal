@@ -1,2 +1,2 @@
-# HR-GOELR-Medewerker-portaal
+# HR GOELR Medewerker portaal
 http://med.hosted.hr.nl/goelr

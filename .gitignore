@@ -3,3 +3,6 @@
 *.css.map
 src/main.css.map
 .idea/*
+.idea/
+
+*.css

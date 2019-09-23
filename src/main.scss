@@ -1,0 +1,20 @@
+.card-top{
+  text-align: center;
+  background: silver; // fallback
+  color: #fff;
+
+  .home &{
+    background: #4B647D;
+  }
+
+  .tutorials &{
+    background: #6092C4;
+  }
+
+  .socials &{
+    background: #91BCE6;
+  }
+
+  // #5A5C91
+}
+
