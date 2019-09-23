@@ -9,7 +9,7 @@
         $description = (isset($item['description']))? '<p class="card-text">'.$item['description'].'</p>' : '';
         $linkText = (isset($item['linkText']))? $item['linkText'] : 'Klik hier';
         $link = (isset($item['link']))? '<a href="'.$item['link'].'" target="_blank" class="btn btn-dark">'.$linkText.'</a>' : '';
-        echo '<div class="col-md-4 mt-3 mb-3">
+        echo '<div class="col-md-4 mt-1 mb-1">
             <div class="card '.$class.'">
                 <div class="card-top card-body">'.$icon.'</div>
                 <div class="card-body">
@@ -94,7 +94,7 @@
         </nav>
     </header>
 
-    <div data-spy="scroll" data-target="#theNav" data-offset="0">
+    <div data-spy="scroll" data-target="#theNav" data-offset="0" class="pt-4">
 
         <home id="home">
             <div class="container mb-5">
