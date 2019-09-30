@@ -1,0 +1,58 @@
+{
+  "links": [
+    {
+      "icon": "far fa-laugh-beam",
+      "title": "Persoonlijk blog",
+      "description": "In mijn blog post ik over het leven als startende tech docent. Daarnaast plaats ik ook geregeld eigen 'tutorials' over zelf gemaakte projecten.",
+      "link": "https://blog.ldegoeij.nl",
+      "categories": [
+        "home"
+      ],
+      "tags": []
+    },
+    {
+      "icon": "fas fa-cube",
+      "title": "Clever",
+      "description": "Documentatie en bewijzen voor project sprints en building blocks.",
+      "link": "https://cle.cmgt.hr.nl",
+      "categories": [
+        "home"
+      ],
+      "tags": []
+    },
+    {
+      "icon": "fab fa-github",
+      "title": "CMGT GitHub account",
+      "description": "Op het GitHub account van CMGT kun je lesmateriaal en verschillende projecten vinden binnen de opleiding.",
+      "link": "https://github.com/HR-CMGT",
+      "categories": [
+        "home"
+      ],
+      "tags": []
+    },
+    {
+      "icon": "fab fa-python",
+      "title": "AdaFruit CPX CircuitPython",
+      "description": "In deze tutorial zie hoe je CircuitPython laad op jouw Circuit Playground (Express).",
+      "link": "https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart",
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [
+        "Adafruit"
+      ]
+    },
+    {
+      "icon": "fab fa-js",
+      "title": "AdaFruit CPX terug naar MakeCode",
+      "description": "Mocht je CircuitPython op jouw Circuit Playground (Express) hebben geladen en wil je weer terug naar MakeCode?",
+      "link": "https://learn.adafruit.com/adafruit-circuit-playground-express/uninstalling-circuitpython",
+      "categories": [
+        "tutorials"
+      ],
+      "tags": [
+        "Adafruit"
+      ]
+    }
+  ]
+}

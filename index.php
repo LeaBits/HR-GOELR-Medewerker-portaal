@@ -1,59 +1,18 @@
 <?php
-    ini_set('display_errors', 1);
-    ini_set('display_startup_errors', 1);
-    error_reporting(E_ALL);
 
-    function createCard($item, $class = ''){
-        $icon = (isset($item['icon']))? '<i class="fa-7x '.$item['icon'].'"></i>' : '';
-        $title = (isset($item['title']))? '<h5 class="card-title">'.$item['title'].'</h5>' : '';
-        $description = (isset($item['description']))? '<p class="card-text">'.$item['description'].'</p>' : '';
-        $linkText = (isset($item['linkText']))? $item['linkText'] : 'Klik hier';
-        $link = (isset($item['link']))? '<a href="'.$item['link'].'" target="_blank" class="btn btn-dark stretched-link">'.$linkText.'</a>' : '';
-        echo '<div class="col-md-4 mt-1 mb-1">
-            <div class="card '.$class.'">
-                <div class="card-top card-img-top card-body">'.$icon.'</div>
-                <div class="card-body">
-                    '.$title.$description.$link.'
-                </div>
-            </div>
-        </div>';
-    }
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-    $itemsHome = array(
-        0 => array(
-            'icon' => 'far fa-laugh-beam',
-            'title' => 'Persoonlijk blog',
-            'description' => 'In mijn blog post ik over het leven als startende tech docent. Daarnaast plaats ik ook geregeld eigen \'tutorials\' over zelf gemaakte projecten.',
-            'link' => 'https://blog.ldegoeij.nl'
-        ),
-        1 => array(
-            'icon' => 'fas fa-cube',
-            'title' => 'Clever',
-            'description' => 'Documentatie en bewijzen voor project sprints en building blocks.',
-            'link' => 'https://cle.cmgt.hr.nl'
-        ),
-        2 => array(
-            'icon' => 'fab fa-github',
-            'title' => 'CMGT GitHub account',
-            'description' => 'Op het GitHub account van CMGT kun je lesmateriaal en verschillende projecten vinden binnen de opleiding.',
-            'link' => 'https://github.com/HR-CMGT'
-        )
-    );
+require('entities/LinkCategory.php');
+require('entities/LinkTag.php');
+require('entities/Link.php');
+require('controllers/IndexController.php');
 
-    $itemsTutorials = array(
-        0 => array(
-            'icon' => 'fab fa-python',
-            'title' => 'AdaFruit CPX CircuitPython',
-            'description' => 'In deze tutorial zie hoe je CircuitPython laad op jouw Circuit Playground (Express).',
-            'link' => 'https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart'
-        ),
-        1 => array(
-            'icon' => 'fab fa-js',
-            'title' => 'AdaFruit CPX terug naar MakeCode',
-            'description' => 'Mocht je CircuitPython op jouw Circuit Playground (Express) hebben geladen en wil je weer terug naar MakeCode?',
-            'link' => 'https://learn.adafruit.com/adafruit-circuit-playground-express/uninstalling-circuitpython'
-        )
-    );
+use Controllers\indexController;
+
+$controller = new indexController();
+
 ?>
 
 
@@ -70,8 +29,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- custom -->
-    <script src="src/main.js"></script>
-    <link rel="stylesheet" href="src/main.css">
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/main.css">
 
     <title>Leanne de Goeij medewerker site</title>
 </head>
@@ -102,13 +61,7 @@
         <home id="home">
             <div class="container mb-5">
                 <div class="row">
-
-                    <?php
-                        foreach ($itemsHome as $item) {
-                            createCard($item, 'home');
-                        }
-                    ?>
-
+                    <?php echo $controller->getCardsByCategoryName("home"); ?>
                 </div>
             </div>
         </home>
@@ -117,13 +70,7 @@
             <div class="container mb-5">
                 <div class="row">
                     <div class="col-12"><h2>Tutorials</h2></div>
-
-                    <?php
-                        foreach ($itemsTutorials as $item) {
-                            createCard($item, 'tutorials');
-                        }
-                    ?>
-
+                    <?php echo $controller->getCardsByCategoryName("tutorials"); ?>
                 </div>
             </div>
         </tutorials>

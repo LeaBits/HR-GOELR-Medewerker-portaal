@@ -1,7 +1,7 @@
 ### Sass template
 .sass-cache/
 *.css.map
-src/main.css.map
+css/main.css.map
 .idea/*
 .idea/
 
