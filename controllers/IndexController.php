@@ -86,6 +86,28 @@ class indexController{
         return $return;
     }
 
+    public function getTagsByCategoryName($name){
+        $tags = new \ArrayObject();
+
+        $links = $this->getLinksByCategoryName($name);
+        foreach($links as $link){
+            foreach($link->getTags() as $tag){
+                $found = false;
+                foreach($tags as $newTag){
+                    if($newTag->getTitle() == $tag->getTitle()){
+                        $found = true;
+                        break;
+                    }
+                }
+                if($found == false){
+                    $tags[] = $tag;
+                }
+            }
+        }
+
+        return $tags;
+    }
+
     public function getCardsByCategoryName($name){
         $HTML = "";
 
@@ -93,10 +115,10 @@ class indexController{
         foreach($links as $link){
             $classes = "";
             foreach($link->getCategories() as $category){
-                $classes .= ' '.$this->getCleanedClassName($category->getTitle());
+                $classes .= ' '.$category->getCleanedTitle();
             }
             foreach($link->getTags() as $tag){
-                $classes .= ' '.$this->getCleanedClassName($tag->getTitle());
+                $classes .= ' '.$tag->getCleanedTitle();
             }
 
             $HTML .= '<div class="col-md-4 mt-1 mb-1'.$classes.'">
@@ -112,9 +134,5 @@ class indexController{
         }
 
         return $HTML;
-    }
-
-    private function getCleanedClassName($name){
-        return preg_replace('/\s+/', '', strtolower($name));
     }
 }

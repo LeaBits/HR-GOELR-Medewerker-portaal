@@ -2,14 +2,6 @@
 
 namespace Entities;
 
-class LinkTag{
-    private $title;
-
-    public function __construct($title){
-        $this->setTitle($title);
-    }
-
-    public function setTitle($new){ $this->title = $new; }
-
-    public function getTitle(){ return $this->title; }
+class LinkTag extends LinkCategory {
+    // categories and tags are almost the same
 }

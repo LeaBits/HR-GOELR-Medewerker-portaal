@@ -48,7 +48,7 @@ $controller = new indexController();
                             <a class="nav-link" href="#home">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#tutorials">Tutorials</a>
+                            <a class="nav-link" href="#modules">Modules</a>
                         </li>
                     </ul>
                 </div>
@@ -66,14 +66,25 @@ $controller = new indexController();
             </div>
         </home>
 
-        <tutorials id="tutorials">
+        <modules id="modules">
             <div class="container mb-5">
                 <div class="row">
-                    <div class="col-12"><h2>Tutorials</h2></div>
-                    <?php echo $controller->getCardsByCategoryName("tutorials"); ?>
+                    <div class="col-12"><h2>Modules</h2></div>
+                    <div class="col-12">
+                        <?php
+                        $tags = $controller->getTagsByCategoryName("modules");
+                        foreach($tags as $tag){
+                            echo '<a href="#" class="badge badge-dark modulesTag" data-name="'.$tag->getCleanedTitle().'">'.
+                                $tag->getTitle().'</a>&nbsp;';
+                        }
+                        ?>
+                    </div>
+                    <?php
+                    echo $controller->getCardsByCategoryName("modules");
+                    ?>
                 </div>
             </div>
-        </tutorials>
+        </modules>
 
     </div>
 

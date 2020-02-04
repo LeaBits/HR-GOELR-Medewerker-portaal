@@ -4,7 +4,7 @@
       "icon": "far fa-laugh-beam",
       "title": "Persoonlijk blog",
       "description": "In mijn blog post ik over het leven als startende tech docent. Daarnaast plaats ik ook geregeld eigen 'tutorials' over zelf gemaakte projecten.",
-      "link": "https://blog.ldegoeij.nl",
+      "link": "https://ldegoeij.nl",
       "categories": [
         "home"
       ],
@@ -31,27 +31,17 @@
       "tags": []
     },
     {
-      "icon": "fab fa-python",
-      "title": "AdaFruit CPX CircuitPython",
-      "description": "In deze tutorial zie hoe je CircuitPython laad op jouw Circuit Playground (Express).",
-      "link": "https://learn.adafruit.com/adafruit-circuit-playground-express/circuitpython-quickstart",
+      "icon": "fas fa-network-wired",
+      "title": "PRG03 Food Magazine voorbeeld",
+      "description": "Hier kun je een voorbeeld vinden van de uitwerking in Programmeren 03.",
+      "link": "http://med.hosted.hr.nl/goelr/_curriculum/prg03/",
       "categories": [
-        "tutorials"
+        "modules"
       ],
       "tags": [
-        "Adafruit"
-      ]
-    },
-    {
-      "icon": "fab fa-js",
-      "title": "AdaFruit CPX terug naar MakeCode",
-      "description": "Mocht je CircuitPython op jouw Circuit Playground (Express) hebben geladen en wil je weer terug naar MakeCode?",
-      "link": "https://learn.adafruit.com/adafruit-circuit-playground-express/uninstalling-circuitpython",
-      "categories": [
-        "tutorials"
-      ],
-      "tags": [
-        "Adafruit"
+        "Programmeren",
+        "Javascript",
+        "PHP"
       ]
     }
   ]
