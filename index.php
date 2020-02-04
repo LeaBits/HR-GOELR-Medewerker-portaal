@@ -38,15 +38,12 @@ $controller = new indexController();
     <header>
         <nav id="theNav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">Leanne de Goeij</a>
+                <a class="navbar-brand" href="#home">Leanne de Goeij</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="nav navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#modules">Modules</a>
                         </li>
