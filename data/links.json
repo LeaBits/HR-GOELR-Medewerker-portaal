@@ -11,24 +11,16 @@
       "tags": []
     },
     {
-      "icon": "fas fa-cube",
-      "title": "Clever",
-      "description": "Documentatie en bewijzen voor project sprints en building blocks.",
-      "link": "https://cle.cmgt.hr.nl",
-      "categories": [
-        "home"
-      ],
-      "tags": []
-    },
-    {
       "icon": "fab fa-github",
       "title": "CMGT GitHub account",
       "description": "Op het GitHub account van CMGT kun je lesmateriaal en verschillende projecten vinden binnen de opleiding.",
       "link": "https://github.com/HR-CMGT",
       "categories": [
-        "home"
+        "modules"
       ],
-      "tags": []
+      "tags": [
+        "Programmeren"
+      ]
     },
     {
       "icon": "fas fa-network-wired",
@@ -39,9 +31,8 @@
         "modules"
       ],
       "tags": [
-        "Programmeren",
-        "Javascript",
-        "PHP"
+        "PRG03",
+        "Programmeren"
       ]
     }
   ]
