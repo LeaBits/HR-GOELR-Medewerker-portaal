@@ -21,6 +21,21 @@
       "tags": [
         "Programmeren"
       ]
+    },
+    {
+      "icon": "fab fa-google>",
+      "title": "Google Dataset Search",
+      "description": "Binnen verschillende modules binnen CMGT moet je gebruik maken van datasets. Google heeft hier een eigen zoekmachine voor.",
+      "link": "https://datasetsearch.research.google.com/",
+      "categories": [
+        "modules"
+      ],
+      "tags": [
+        "Programmeren",
+        "CLE",
+        "TLE",
+        "PLE"
+      ]
     }
   ]
 }
