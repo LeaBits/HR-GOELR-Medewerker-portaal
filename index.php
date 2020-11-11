@@ -35,23 +35,6 @@ $controller = new indexController();
     <title>Leanne de Goeij medewerker site</title>
 </head>
 <body class="pt-5">
-    <header>
-        <nav id="theNav" class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#home">Leanne de Goeij</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="nav navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#modules">Modules</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
 
     <div data-spy="scroll" data-target="#theNav" data-offset="0" class="pt-4">
 
@@ -59,29 +42,10 @@ $controller = new indexController();
             <div class="container mb-5">
                 <div class="row">
                     <?php echo $controller->getCardsByCategoryName("home"); ?>
+                    <?php echo $controller->getCardsByCategoryName("modules"); ?>
                 </div>
             </div>
         </home>
-
-        <modules id="modules">
-            <div class="container mb-5">
-                <div class="row">
-                    <div class="col-12"><h2>Modules</h2></div>
-                    <div class="col-12">
-                        <?php
-                        $tags = $controller->getTagsByCategoryName("modules");
-                        foreach($tags as $tag){
-                            echo '<a href="#" class="badge badge-dark modulesTag" data-name="'.$tag->getCleanedTitle().'">'.
-                                $tag->getTitle().'</a>&nbsp;';
-                        }
-                        ?>
-                    </div>
-                    <?php
-                    echo $controller->getCardsByCategoryName("modules");
-                    ?>
-                </div>
-            </div>
-        </modules>
 
     </div>
 
