@@ -6,3 +6,5 @@ css/main.css.map
 .idea/
 
 *.css
+data/links.old.json
+index.old.php
