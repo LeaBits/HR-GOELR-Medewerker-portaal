@@ -1,10 +1,7 @@
-### Sass template
 .sass-cache/
 *.css.map
 css/main.css.map
 .idea/*
 .idea/
-
 *.css
-data/links.old.json
-index.old.php
+vendor/*

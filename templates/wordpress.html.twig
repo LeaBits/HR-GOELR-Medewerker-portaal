@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">WordPress</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <questions class="row">
+    </questions>
+{% endblock %}
+
+{% block javascript %}
+<script src="js/wordpress.js"></script>
+{% endblock %}

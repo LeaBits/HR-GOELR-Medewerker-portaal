@@ -3,7 +3,7 @@
   background: silver; // fallback
   color: #fff;
 
-  .home &{
+  main &{
     background: #4B647D;
   }
 
@@ -14,7 +14,11 @@
   .socials &{
     background: #91BCE6;
   }
-
-  // #5A5C91
 }
 
+.badge{
+  #specializations &,
+  questions &{
+    margin: 0px 2px;
+  }
+}

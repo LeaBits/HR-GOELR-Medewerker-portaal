@@ -1,0 +1,10 @@
+{
+  "specialization": {
+    "advanced": [
+      "CSS", "HTML", "PHP", "SCSS/LESS", "ASP.NET"
+    ],
+    "intermediate": [
+      "Mobile", "Security", "VR"
+    ]
+  }
+}
