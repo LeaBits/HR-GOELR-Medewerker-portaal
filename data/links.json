@@ -11,14 +11,16 @@
       "tags": []
     },
     {
-      "icon": "fas fa-book-open",
-      "title": "Basisopleiding didactiek",
-      "description": "Op mijn blog bevind zich een subsite over mijn opdrachten betreft de basisopleiding didactiek.",
-      "link": "https://ldegoeij.nl/bdb",
+      "icon": "fab fa-wordpress",
+      "title": "WordPress Wiki",
+      "description": "Tijdens de opleiding van CMGT werk je met een WordPress blog. Hier worden de meest gestelde vragen beantwoord.",
+      "link": "wordpress.php",
       "categories": [
-        "home"
+        "modules"
       ],
-      "tags": []
+      "tags": [
+        "Programmeren"
+      ]
     },
     {
       "icon": "fab fa-github",
