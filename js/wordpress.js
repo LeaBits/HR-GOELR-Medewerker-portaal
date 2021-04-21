@@ -1,5 +1,6 @@
 window.addEventListener('load', init);
 
+const questionsLinkContainer = document.querySelector('links #toc');
 const questionsContainer = document.querySelector('questions');
 const questionURL = "./data/wordpress.json";
 
@@ -8,6 +9,10 @@ const questionURL = "./data/wordpress.json";
  */
 function init(){
     getData(questionURL, createQuestionsSuccessHandler);
+}
+
+function getQuestionID(number){
+    return "question"+number;
 }
 
 function createQuestionsSuccessHandler(data){
@@ -21,9 +26,17 @@ function createQuestionsSuccessHandler(data){
 }
 
 function createQuestion(number, item){
-    console.log(item);
+    const ID = getQuestionID(number);
 
-    const col = createDOM('col', {'class': 'col-12'});
+    // link
+    const listItem = createDOM('li');
+    const link = createDOM('a', {'href': '#'+ID});
+    link.innerText = item.question;
+    listItem.appendChild(link);
+    questionsLinkContainer.appendChild(listItem);
+
+    // question
+    const col = createDOM('col', {'class': 'col-12', 'id': ID});
     const card = createDOM('card', {'class': 'card'});
     card.classList.add('my-2');
 
@@ -32,16 +45,16 @@ function createQuestion(number, item){
     cardHeaderContent = createDOM('span');
     cardHeaderContent.innerHTML = '<strong>'+item.question+'</strong>';
     cardHeader.appendChild(cardHeaderContent);
-    for(const tag of item.tags){
-        const badge = createDOM('span', {'class': 'badge bg-primary text-light'});
-        badge.innerText = tag;
-        cardHeader.appendChild(badge);
-    }
     card.appendChild(cardHeader);
 
     // body
     const cardBody = createDOM('cardBody', {'class': 'card-body'});
-    cardBody.innerHTML = item.answerHTML;
+    cardBody.innerHTML = item.answerHTML + '<br/>';
+    for(const tag of item.tags){
+        const badge = createDOM('span', {'class': 'badge bg-primary text-light'});
+        badge.innerText = tag;
+        cardBody.appendChild(badge);
+    }
     card.appendChild(cardBody);
 
     col.appendChild(card);
