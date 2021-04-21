@@ -7,6 +7,12 @@
       "tags": ["hosting", "server"]
     },
     {
+      "question": "Mijn inloggegevens zijn goed, maar FileZilla kan niet verbinden.",
+      "answerHTML": "Krijg je een van de volgende meldingen (of vergelijkbaar in het Engels): <code>Fout: verbinding verlopen na 20 seconden inactiviteit</code> of <code>Fout: kan geen verbinding maken met de server</code><br/>De kans is groot, als jouw inloggegevens echt kloppen, dat de hosting momenteel iets overbelast is. Probeer het later nog eens.",
+      "link": "noconnection",
+      "tags": ["hosting", "server"]
+    },
+    {
       "question": "Ik krijg een 'Verouderde WordPress Pagina'-melding!",
       "answerHTML": "<img src=\"./images/wordpress/oudewordpress.png\" class=\"responsive\"/><br/> Krijg je deze melding, zodra je jouw WordPress installatie probeert te bereiken?<ol><li>Login op jouw hosting.</li><li>Zoek naar een bestandje met de naam: <code>blocked_please_update_wordpress</code> (of iets vergelijkbaars) en verwijder deze.</li><li>Open de website in de browser en ga naar het adminpaneel.</li><li>Voer een update uit.</li></ol>",
       "link": "verouderd",
