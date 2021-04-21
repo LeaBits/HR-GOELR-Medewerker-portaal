@@ -11,32 +11,26 @@ function init(){
     getData(questionURL, createQuestionsSuccessHandler);
 }
 
-function getQuestionID(number){
-    return "question"+number;
-}
-
 function createQuestionsSuccessHandler(data){
     if(!isAnObject(data.wordpress)){
         return;
     }
 
     for(const key in data.wordpress){
-        createQuestion(key, data.wordpress[key]);
+        createQuestion(data.wordpress[key]);
     }
 }
 
-function createQuestion(number, item){
-    const ID = getQuestionID(number);
-
+function createQuestion(item){
     // link
     const listItem = createDOM('li');
-    const link = createDOM('a', {'href': '#'+ID});
+    const link = createDOM('a', {'href': '#'+item.link});
     link.innerText = item.question;
     listItem.appendChild(link);
     questionsLinkContainer.appendChild(listItem);
 
     // question
-    const col = createDOM('col', {'class': 'col-12', 'id': ID});
+    const col = createDOM('col', {'class': 'col-12', 'id': item.link});
     const card = createDOM('card', {'class': 'card'});
     card.classList.add('my-2');
 
