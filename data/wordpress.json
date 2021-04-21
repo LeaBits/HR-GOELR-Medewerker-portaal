@@ -7,7 +7,7 @@
     },
     {
       "question": "Ik krijg een 'Verouderde WordPress Pagina'-melding!",
-      "answerHTML": "<img src=\"./images/wordpress/oudewordpress.png\" class=\"responsive\"/><br/> Krijg je deze melding, zodra je jouw WordPress installatie probeert te bereiken?<ol><li>Login op jouw hosting.</li><li>Zoek naar een vreemd genoemd bestandje en verwijder deze.</li><li>Open de website in de browser en ga naar het adminpaneel.</li><li>Voer een update uit.</li></ol>",
+      "answerHTML": "<img src=\"./images/wordpress/oudewordpress.png\" class=\"responsive\"/><br/> Krijg je deze melding, zodra je jouw WordPress installatie probeert te bereiken?<ol><li>Login op jouw hosting.</li><li>Zoek naar een bestandje met de naam: <code>blocked_please_update_wordpress</code> (of iets vergelijkbaars) en verwijder deze.</li><li>Open de website in de browser en ga naar het adminpaneel.</li><li>Voer een update uit.</li></ol>",
       "tags": ["hosting", "server"]
     },
     {
