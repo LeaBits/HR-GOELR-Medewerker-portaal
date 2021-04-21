@@ -6,6 +6,11 @@
       "tags": ["hosting", "server"]
     },
     {
+      "question": "Ik krijg een 'Verouderde WordPress Pagina'-melding!",
+      "answerHTML": "<img src=\"./images/wordpress/oudewordpress.png\" class=\"responsive\"/><br/> Krijg je deze melding, zodra je jouw WordPress installatie probeert te bereiken?<ol><li>Login op jouw hosting.</li><li>Zoek naar een vreemd genoemd bestandje en verwijder deze.</li><li>Open de website in de browser en ga naar het adminpaneel.</li><li>Voer een update uit.</li></ol>",
+      "tags": ["hosting", "server"]
+    },
+    {
       "question": "Ik kan niet meer inloggen (en wachtwoord resetten doet het niet)!",
       "answerHTML": "Probeer op je website het volgende:<ol><li>Ga naar: <a href=\"https://thrivewp.com/wordpress-admin-login-not-working/#password\" target=\"_blank\">https://thrivewp.com/wordpress-admin-login-not-working/#password</a></li><li>Zoek in de pagina naar 'Before you do anything, it is always good you back up the site.'</li><li>En volg de stappen op die website</li></ol>",
       "tags": ["admin"]
