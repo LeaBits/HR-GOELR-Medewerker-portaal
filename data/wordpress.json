@@ -13,8 +13,14 @@
       "tags": ["hosting", "server"]
     },
     {
+      "question": "Wat zijn mijn database gegevens?",
+      "answerHTML": "<img src=\"./images/wordpress/readme.png\" class=\"responsive\"/><br/>Kan je jouw database inloggegevens niet vinden? Deze staan op jouw hosting. Zodra je via een FTP client (zoals FileZilla) inlogt op de hosting zie je hier een <code>readme.txt</code> staan. Hier staan al jouw persoonlijke gegevens in.<br/><br/>Wil je in de PHPMyAdmin kijken? Ga dan naar: <code>https://sql.hosted.hr.nl/</code> en log hier in met dezelfde inloggegevens uit het readme.txt bestand.",
+      "link": "databaseauth",
+      "tags": ["hosting", "server", "database"]
+    },
+    {
       "question": "Ik krijg een 'Verouderde WordPress Pagina'-melding!",
-      "answerHTML": "<img src=\"./images/wordpress/oudewordpress.png\" class=\"responsive\"/><br/> Krijg je deze melding, zodra je jouw WordPress installatie probeert te bereiken?<ol><li>Login op jouw hosting.</li><li>Zoek naar een bestandje met de naam: <code>blocked_please_update_wordpress</code> (of iets vergelijkbaars) en verwijder deze.</li><li>Open de website in de browser en ga naar het adminpaneel.</li><li>Voer een update uit.</li></ol>",
+      "answerHTML": "<img src=\"./images/wordpress/oudewordpress.png\" class=\"responsive\"/><br/>Krijg je deze melding, zodra je jouw WordPress installatie probeert te bereiken?<ol><li>Login op jouw hosting.</li><li>Zoek naar een bestandje met de naam: <code>blocked_please_update_wordpress</code> (of iets vergelijkbaars) en verwijder deze.</li><li>Open de website in de browser en ga naar het adminpaneel.</li><li>Voer een update uit.</li></ol>",
       "link": "verouderd",
       "tags": ["hosting", "server"]
     },
