@@ -31,6 +31,12 @@
       "tags": ["admin"]
     },
     {
+      "question": "Ik kan niet updaten! (handtekening/signature error)",
+      "answerHTML": "Probeer je een update te draaien, maar krijg je een error over het niet kunnen verifieren van een handtekening (signature)? Dan kun je het beste handmatig een update draaien.<br/>Een tutorial voor het handmatig updaten kun je <a href=\"https://wordpress.org/support/article/updating-wordpress/#manual-update\" target=\"_blank\">hier vinden</a>.",
+      "link": "signature",
+      "tags": ["admin", "hosting", "server"]
+    },
+    {
       "question": "Mijn blog staat op /wordpress",
       "answerHTML": "Mocht je wordpress hebben geinstalleerd met een extra wordpress directory(map) in jouw adres, dus heb je:<br/><code>http://stud.hosted.hr.nl/[studentnummer]/wordpress</code><br/>In plaats van:<br/><code>http://stud.hosted.hr.nl/[studentnummer]/</code><br/>Plaats dan direct in je root (public.www map) een nieuw bestand, genaamd index.html, met de volgende inhoud:<br/><code>&lt;script&gt; window.location.href = \"wordpress\"; &lt;/script&gt;</code>",
       "link": "urlverkeerd",
