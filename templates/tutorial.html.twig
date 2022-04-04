@@ -1,0 +1,27 @@
+{% extends "base.html.twig" %}
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ pageTitle }}</li>
+                </ol>
+            </nav>
+            <div class="alert alert-danger" id="tutorialAlert" role="alert"></div>
+        </div>
+    </div>
+    <section id="content" data-link="{{ datalink }}">
+        <links class="row">
+            <nav class="col">
+                <ol id="toc"></ol>
+            </nav>
+        </links>
+        <questions class="row">
+        </questions>
+    </section>
+{% endblock %}
+
+{% block javascript %}
+<script src="js/tutorial.js"></script>
+{% endblock %}

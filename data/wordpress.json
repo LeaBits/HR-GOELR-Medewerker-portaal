@@ -1,5 +1,6 @@
 {
-  "wordpress": [
+  "alert": "<strong>Update! Update! Update!</strong> Een hoop problemen voorkom je door WordPress regelmatig te updaten. Ook al de <u>thema's</u> en <u>plugins</u>.",
+  "tutorial": [
     {
       "question": "Hoe log ik in op mijn hosting via FileZilla?",
       "answerHTML": "Vul de volgende gegevens in:<ul><li>Host: stud.hosted.hr.nl</li><li>Port kun je leeglaten (pikt de default op)</li><li>User: studentennummer</li><li>Password: HR wachtwoord</li></ul>Je database gegevens kun je terugvinden in het meest bovenliggende mapje in een readme.txt bestand.",

@@ -6,6 +6,6 @@ $loader = new \Twig\Loader\FilesystemLoader('templates/');
 $twig = new \Twig\Environment($loader);
 
 echo $twig->render('tutorial.html.twig', array(
-    'pageTitle' => 'Wordpress',
-    'datalink' => 'wordpress.json'
+    'pageTitle' => 'Studenthosting',
+    'datalink' => 'studhosting.json'
 ));

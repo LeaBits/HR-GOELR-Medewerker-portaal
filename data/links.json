@@ -1,14 +1,16 @@
 {
   "links": [
     {
-      "icon": "far fa-laugh-beam",
-      "title": "Persoonlijk blog",
-      "description": "Op mijn blog post ik over het leven als startende tech docent. Daarnaast plaats ik ook geregeld eigen 'tutorials' over zelf gemaakte projecten.",
-      "link": "https://ldegoeij.nl",
+      "icon": "fa fa-server",
+      "title": "Studenthosting Wiki",
+      "description": "Tijdens de opleiding kun je gebruik maken van jouw persoonlijke hosting, waarop je PHP kunt draaien en een eigen database hebt.",
+      "link": "studhosting.php",
       "categories": [
-        "home"
+        "modules"
       ],
-      "tags": []
+      "tags": [
+        "Programmeren"
+      ]
     },
     {
       "icon": "fab fa-wordpress",

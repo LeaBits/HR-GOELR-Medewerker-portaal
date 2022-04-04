@@ -26,3 +26,10 @@
 .responsive{
   max-width: 100%;
 }
+
+.alert{
+  display: none;
+  &.display{
+    display: block;
+  }
+}

@@ -2,22 +2,32 @@ window.addEventListener('load', init);
 
 const questionsLinkContainer = document.querySelector('links #toc');
 const questionsContainer = document.querySelector('questions');
-const questionURL = "./data/wordpress.json";
+// const questionURL = "./data/wordpress.json";
+let questionURL;
 
 /**
  * init
  */
 function init(){
+    let content = document.getElementById('content');
+    questionURL = `./data/${content.dataset.link}`;
+
     getData(questionURL, createQuestionsSuccessHandler);
 }
 
 function createQuestionsSuccessHandler(data){
-    if(!isAnObject(data.wordpress)){
+    if(data.alert != null){
+        let alertDiv = document.getElementById('tutorialAlert');
+        alertDiv.innerHTML = data.alert;
+        alertDiv.classList.add('display');
+    }
+
+    if(!isAnObject(data.tutorial)){
         return;
     }
 
-    for(const key in data.wordpress){
-        createQuestion(data.wordpress[key]);
+    for(const key in data.tutorial){
+        createQuestion(data.tutorial[key]);
     }
 }
 

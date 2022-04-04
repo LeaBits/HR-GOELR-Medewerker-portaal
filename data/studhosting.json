@@ -1,0 +1,40 @@
+{
+  "tutorial": [
+    {
+      "question": "Waar vind ik mijn hosting?",
+      "answerHTML": "Iedere student heeft, op de Hogeschool in Rotterdam, recht op een eigen hosting via de schoolserver. Deze kun je terugvinden op <code>http://stud.hosted.hr.nl/[STUDNUMMER]/</code>. Je kunt hier PHP applicaties op draaien en gebruik maken van een MySQL database, zoals je die kent van XAMPP. Twijfel je of jouw hosting wel bestaat kun je altijd een bericht sturen naar <code>service@hr.nl</code>",
+      "link": "wherehost",
+      "tags": []
+    },
+    {
+      "question": "Hoe zet ik bestanden op mijn hosting?",
+      "answerHTML": "Om bestanden over te zetten, heb je een FTP-programma nodig op jouw computer. Één van de meest gebruikte, gratus programma's is FileZilla. Wil je dus bestanden zetten op jouw hosting, start met het installeren van FileZilla (mocht je moeten kiezen tussen een Client of Server versie; kies altijd voor de client versie).",
+      "link": "howhost",
+      "tags": []
+    },
+    {
+      "question": "Hoe log ik in op mijn hosting via FileZilla of ander FTP programma?",
+      "answerHTML": "In FileZilla heb je, bovenin de app, een quick connect bar:<br/><img src=\"./images/studhosting/filezillaQuickConnect.png\" class=\"responsive\"/><br/><br/>Vul de volgende gegevens in:<ul><li>Host: stud.hosted.hr.nl</li><li>Port kun je leeglaten (pikt de default op)</li><li>User: studentennummer</li><li>Password: HR wachtwoord</li></ul>",
+      "link": "hostingauth",
+      "tags": []
+    },
+    {
+      "question": "Mijn inloggegevens zijn goed, maar FileZilla kan niet verbinden.",
+      "answerHTML": "Krijg je een van de volgende meldingen (of vergelijkbaar in het Engels): <code>Fout: verbinding verlopen na 20 seconden inactiviteit</code> of <code>Fout: kan geen verbinding maken met de server</code><br/>De kans is groot, als jouw inloggegevens echt kloppen, dat de hosting momenteel iets overbelast is. Probeer het later nog eens.",
+      "link": "noconnection",
+      "tags": []
+    },
+    {
+      "question": "Wat zijn mijn database gegevens?",
+      "answerHTML": "<img src=\"./images/wordpress/readme.png\" class=\"responsive\"/><br/>Kan je jouw database inloggegevens niet vinden? Deze staan op jouw hosting. Zodra je via een FTP client (zoals FileZilla) inlogt op de hosting zie je hier een <code>readme.txt</code> staan. Hier staan al jouw persoonlijke gegevens in.",
+      "link": "databaseauth",
+      "tags": []
+    },
+    {
+      "question": "Waar kan ik mijn database vinden?",
+      "answerHTML": "Je kunt jouw eigen hosting benaderen door te gaan naar: <code>https://sql.hosted.hr.nl/</code>. Je komt nu op een inlogscherm, waar je de PHPMyAdmin kunt benaderen, zoals je die ook kent van XAMPP. Vul hier de gegevens in die je gevonden hebt in de vorige stap.",
+      "link": "wheredb",
+      "tags": []
+    }
+  ]
+}
