@@ -8,7 +8,7 @@
     },
     {
       "question": "Hoe zet ik bestanden op mijn hosting?",
-      "answerHTML": "Om bestanden over te zetten, heb je een FTP-programma nodig op jouw computer. Één van de meest gebruikte, gratus programma's is FileZilla. Wil je dus bestanden zetten op jouw hosting, start met het installeren van FileZilla (mocht je moeten kiezen tussen een Client of Server versie; kies altijd voor de client versie).",
+      "answerHTML": "Om bestanden over te zetten, heb je een FTP-programma nodig op jouw computer. Één van de meest gebruikte, gratis programma's is FileZilla. Wil je dus bestanden zetten op jouw hosting, start met het installeren van FileZilla (mocht je moeten kiezen tussen een Client of Server versie; kies altijd voor de client versie).",
       "link": "howhost",
       "tags": []
     },
