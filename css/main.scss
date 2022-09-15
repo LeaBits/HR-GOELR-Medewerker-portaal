@@ -1,18 +1,20 @@
+$cardHeaderColor: #fff;
+$cardHeaderBGMain: #4B647D;
+$cardHeaderBGModules: #6092C4;
+$cardHeaderBGSocials: #91BCE6;
+
 .card-top{
   text-align: center;
   background: silver; // fallback
-  color: #fff;
-
+  color: $cardHeaderColor;
   main &{
-    background: #4B647D;
+    background: $cardHeaderBGMain;
   }
-
   .modules &{
-    background: #6092C4;
+    background: $cardHeaderBGModules;
   }
-
   .socials &{
-    background: #91BCE6;
+    background: $cardHeaderBGSocials;
   }
 }
 
