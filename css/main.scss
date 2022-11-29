@@ -7,14 +7,10 @@ $cardHeaderBGSocials: #91BCE6;
 #indexBanner{
   min-height: 250px;
   overflow: hidden;
-  background-image: url('/images/indexbanner.jpg');
+  background-image: url('../images/indexbanner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
-
-  // img{
-  //   margin-top: calc(100% - 250px);
-  // }
 
   .card-img-overlay{
     background-color: none;
