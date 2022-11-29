@@ -87,8 +87,9 @@ function createLink(item){
 
     // header
     const cardHeader = createDOM('cardHeader', {'class': 'card-top card-img-top card-body'});
-    const icon = createDOM('i', {'class': 'fa-7x '+item.icon});
-    cardHeader.appendChild(icon);
+    // const icon = createDOM('i', {'class': 'fa-7x '+item.icon});
+    // cardHeader.appendChild(icon);
+    cardHeader.innerHTML = item.icon;
     card.appendChild(cardHeader);
 
     // body

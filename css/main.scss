@@ -1,7 +1,26 @@
 $cardHeaderColor: #fff;
 $cardHeaderBGMain: #4B647D;
-$cardHeaderBGModules: #6092C4;
+// $cardHeaderBGModules: #6092C4;
+$cardHeaderBGModules: #20c997;
 $cardHeaderBGSocials: #91BCE6;
+
+#indexBanner{
+  min-height: 250px;
+  overflow: hidden;
+  background-image: url('/images/indexbanner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+
+  // img{
+  //   margin-top: calc(100% - 250px);
+  // }
+
+  .card-img-overlay{
+    background-color: none;
+    background-color: rgba(0,0,0,0.6);
+  }
+}
 
 .card-top{
   text-align: center;
@@ -15,6 +34,10 @@ $cardHeaderBGSocials: #91BCE6;
   }
   .socials &{
     background: $cardHeaderBGSocials;
+  }
+
+  i, span{
+    font-size: 60px !important;
   }
 }
 
