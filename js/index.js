@@ -1,8 +1,5 @@
 window.addEventListener('load', init);
 
-const specializationContainer = document.querySelector('#specializations');
-const specializationURL = "./data/specialization.json";
-
 const linksContainer = document.querySelector('links');
 const linksURL = "./data/links.json";
 
@@ -10,49 +7,7 @@ const linksURL = "./data/links.json";
  * init
  */
 function init(){
-    getData(specializationURL, createSpecializationsSuccessHandler);
     getData(linksURL, createLinksSuccessHandler);
-}
-
-/**
- * Specializations
- */
-
-/**
- * createSpecializationsSuccessHandler
- * @param data
- */
-function createSpecializationsSuccessHandler(data){
-    if(!isAnObject(data.specialization) ||
-        !isAnObject(data.specialization.advanced) ||
-        !isAnObject(data.specialization.intermediate)){
-        return;
-    }
-
-    let specializations = data.specialization.advanced.concat(data.specialization.intermediate);
-    specializations.sort();
-    for(const item of specializations) {
-        if(data.specialization.advanced.includes(item)){
-            createSpecialization(item, true);
-        }else{
-            createSpecialization(item);
-        }
-    }
-}
-
-/**
- * createSpecialization
- * @param item
- */
-function createSpecialization(item, isAdvanced = false){
-    const badge = createDOM('span', {'class': 'badge text-light'});
-    badge.innerText = item;
-    if(isAdvanced){
-        badge.classList.add('bg-success');
-    }else{
-        badge.classList.add('bg-info');
-    }
-    specializationContainer.appendChild(badge);
 }
 
 /**
