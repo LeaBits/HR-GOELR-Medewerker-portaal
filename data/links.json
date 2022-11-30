@@ -25,12 +25,36 @@
       ]
     },
     {
+      "icon": "<i class=\"bi bi-motherboard\"></i>",
+      "title": "FabLab Making Wiki",
+      "description": "Veelgestelde vragen en overzicht aan handige tools voor het keuzevak FabLab making.",
+      "link": "fablab.php",
+      "categories": [
+        "modules"
+      ],
+      "tags": [
+        
+      ]
+    },
+    {
       "icon": "<i class=\"bi bi-github\"></i>",
       "title": "CMGT GitHub account",
       "description": "Op het GitHub account van CMGT kun je lesmateriaal en verschillende projecten vinden binnen de opleiding.",
       "link": "https://github.com/HR-CMGT",
       "categories": [
-        "modules"
+        
+      ],
+      "tags": [
+        "Programmeren"
+      ]
+    },
+    {
+      "icon": "<i class=\"bi bi-clipboard2-check-fill\"></i>",
+      "title": "CLE tutorials (GitHub)",
+      "description": "Hier verschillende links naar tutorials die geplaatst zijn op het GitHub account. Waaronder voor de Circuit Playground Express, HTML & CSS en game development.",
+      "link": "https://github.com/HR-CMGT/CLE-speedcourses",
+      "categories": [
+        
       ],
       "tags": [
         "Programmeren"

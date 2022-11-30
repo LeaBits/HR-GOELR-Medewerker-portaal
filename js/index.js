@@ -34,7 +34,7 @@ function createLinksSuccessHandler(data){
  */
 function createLink(item){
     // card
-    const col = createDOM('col', {'class': 'col-md-4 mt-1 mb-1'});
+    const col = createDOM('col', {'class': 'col-md-4 mt-1 mb-3'});
     for(const category of item.categories){
         col.classList.add(category);
     }
@@ -56,7 +56,8 @@ function createLink(item){
     text.innerText = item.description;
     cardBody.appendChild(text);
     const link = createDOM('a', {'href': item.link, 'target': '_blank', 'class': 'btn btn-dark stretched-link'});
-    link.innerText = 'Klik hier';
+    // link.innerText = 'Klik hier';
+    link.innerHTML = item.icon + 'Klik hier';
     cardBody.appendChild(link);
     card.appendChild(cardBody);
 

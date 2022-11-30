@@ -33,12 +33,19 @@ $cardHeaderBGSocials: #91BCE6;
   }
 
   i, span{
-    font-size: 60px !important;
+    font-size: 40px !important;
+  }
+}
+
+.card{
+  .btn{
+    i, span{
+      margin-right: 10px;
+    }
   }
 }
 
 .badge{
-  #specializations &,
   questions &{
     margin: 0px 2px;
   }
