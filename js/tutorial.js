@@ -16,6 +16,12 @@ function init(){
 }
 
 function createQuestionsSuccessHandler(data){
+    if(data.info != null){
+        let infoDiv = document.getElementById('tutorialInfo');
+        infoDiv.innerHTML = data.info;
+        infoDiv.classList.add('display');
+    }
+
     if(data.alert != null){
         let alertDiv = document.getElementById('tutorialAlert');
         alertDiv.innerHTML = data.alert;

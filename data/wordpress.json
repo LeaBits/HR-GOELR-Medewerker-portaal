@@ -1,24 +1,7 @@
 {
+  "info": "Heb je problemen met jouw studenthosting i.p.v. WordPress? <a href=\"studhosting.php\">Klik dan hier!</a>",
   "alert": "<strong>Update! Update! Update!</strong> Een hoop problemen voorkom je door WordPress regelmatig te updaten. Ook al de <u>thema's</u> en <u>plugins</u>.",
   "tutorial": [
-    {
-      "question": "Hoe log ik in op mijn hosting via FileZilla?",
-      "answerHTML": "Vul de volgende gegevens in:<ul><li>Host: stud.hosted.hr.nl</li><li>Port kun je leeglaten (pikt de default op)</li><li>User: studentennummer</li><li>Password: HR wachtwoord</li></ul>Je database gegevens kun je terugvinden in het meest bovenliggende mapje in een readme.txt bestand.",
-      "link": "hostingauth",
-      "tags": ["hosting", "server"]
-    },
-    {
-      "question": "Mijn inloggegevens zijn goed, maar FileZilla kan niet verbinden.",
-      "answerHTML": "Krijg je een van de volgende meldingen (of vergelijkbaar in het Engels): <code>Fout: verbinding verlopen na 20 seconden inactiviteit</code> of <code>Fout: kan geen verbinding maken met de server</code><br/>De kans is groot, als jouw inloggegevens echt kloppen, dat de hosting momenteel iets overbelast is. Probeer het later nog eens.",
-      "link": "noconnection",
-      "tags": ["hosting", "server"]
-    },
-    {
-      "question": "Wat zijn mijn database gegevens?",
-      "answerHTML": "<img src=\"./images/wordpress/readme.png\" class=\"responsive\"/><br/>Kan je jouw database inloggegevens niet vinden? Deze staan op jouw hosting. Zodra je via een FTP client (zoals FileZilla) inlogt op de hosting zie je hier een <code>readme.txt</code> staan. Hier staan al jouw persoonlijke gegevens in.<br/><br/>Wil je in de PHPMyAdmin kijken? Ga dan naar: <code>https://sql.hosted.hr.nl/</code> en log hier in met dezelfde inloggegevens uit het readme.txt bestand.",
-      "link": "databaseauth",
-      "tags": ["hosting", "server", "database"]
-    },
     {
       "question": "Ik krijg een 'Verouderde WordPress Pagina'-melding!",
       "answerHTML": "<img src=\"./images/wordpress/oudewordpress.png\" class=\"responsive\"/><br/>Krijg je deze melding, zodra je jouw WordPress installatie probeert te bereiken?<ol><li>Login op jouw hosting.</li><li>Zoek naar een bestandje met de naam: <code>blocked_please_update_wordpress</code> (of iets vergelijkbaars) en verwijder deze.</li><li>Open de website in de browser en ga naar het adminpaneel.</li><li>Voer een update uit.</li></ol>",

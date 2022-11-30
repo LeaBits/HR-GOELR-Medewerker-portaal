@@ -26,7 +26,7 @@
     },
     {
       "question": "Mijn inloggegevens zijn goed, maar FileZilla kan niet verbinden.",
-      "answerHTML": "Krijg je een van de volgende meldingen (of vergelijkbaar in het Engels): <code>Fout: verbinding verlopen na 20 seconden inactiviteit</code> of <code>Fout: kan geen verbinding maken met de server</code><br/>De kans is groot, als jouw inloggegevens echt kloppen, dat de hosting momenteel iets overbelast is. Probeer het later nog eens.",
+      "answerHTML": "Weet je zeker dat je de hosting met <strong>sFTP</strong> probeert te benaderen i.p.v. FTP?<br/><br/>Zo ja; Krijg je een van de volgende meldingen (of vergelijkbaar in het Engels): <code>Fout: verbinding verlopen na 20 seconden inactiviteit</code> of <code>Fout: kan geen verbinding maken met de server</code><br/>De kans is groot, als jouw inloggegevens echt kloppen, dat de hosting momenteel iets overbelast is. Probeer het later nog eens.",
       "link": "noconnection",
       "tags": []
     },
