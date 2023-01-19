@@ -14,7 +14,7 @@
     },
     {
       "question": "Hoe log ik in op mijn hosting via FileZilla of ander FTP programma?",
-      "answerHTML": "In FileZilla heb je, bovenin de app, een quick connect bar:<br/><img src=\"./images/studhosting/filezillaQuickConnect.png\" class=\"responsive\"/><br/><br/>Vul de volgende gegevens in:<ul><li>Host: stud.hosted.hr.nl</li><li>Port kun je leeglaten (pikt de default op)</li><li>User: studentennummer</li><li>Password: HR wachtwoord</li></ul>Let op; de studenthosting benader je altijd via <strong>sFTP</strong>. Dit is een extra beveiligde connectie, die connectie maakt via een specifieke port (die automatisch voor jou wordt ingevuld, als je die leeg laat).",
+      "answerHTML": "In FileZilla heb je, bovenin de app, een quick connect bar:<br/><img src=\"./images/studhosting/filezillaQuickConnect.png\" class=\"responsive\"/><br/><br/>Vul de volgende gegevens in:<ul><li>Host: stud.hosted.hr.nl</li><li>Port: 22 (sFTP port)</li><li>User: studentennummer</li><li>Password: HR wachtwoord</li></ul>Let op; de studenthosting benader je altijd via <strong>sFTP</strong>. Dit is een extra beveiligde connectie, die connectie maakt via een specifieke port.",
       "link": "hostingauth",
       "tags": []
     },
