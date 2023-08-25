@@ -49,15 +49,15 @@
       ]
     },
     {
-      "icon": "<i class=\"bi bi-clipboard2-check-fill\"></i>",
-      "title": "CLE tutorials (GitHub)",
-      "description": "Hier verschillende links naar tutorials die geplaatst zijn op het GitHub account. Waaronder voor de Circuit Playground Express, HTML & CSS en game development.",
-      "link": "https://github.com/HR-CMGT/CLE-speedcourses",
+      "icon": "<i class=\"bi bi-person-circle\"></i>",
+      "title": "Persoonlijke website",
+      "description": "Vind mijn persoonlijke website op dit adres!",
+      "link": "https://ldegoeij.nl",
       "categories": [
         
       ],
       "tags": [
-        "Programmeren"
+        "Persoonlijk"
       ]
     }
   ]

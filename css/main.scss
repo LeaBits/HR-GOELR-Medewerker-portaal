@@ -1,20 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Moirai+One&display=swap');
+
 $cardHeaderColor: #fff;
 $cardHeaderBGMain: #4B647D;
-// $cardHeaderBGModules: #6092C4;
 $cardHeaderBGModules: #20c997;
-$cardHeaderBGSocials: #91BCE6;
+// $cardHeaderBGSocials: #91BCE6;
+
+$h1font: 'Moirai One', cursive;
+
+h1{
+    font-family: $h1font;
+    font-weight: normal;
+}
 
 #indexBanner{
   min-height: 250px;
   overflow: hidden;
-  background-image: url('../images/indexbanner.jpg');
+  background-image: url('../images/pennybanner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom center;
+  background-position: center;
+
+  .card-title{
+    margin-bottom: 0px;
+  }
 
   .card-img-overlay{
     background-color: none;
-    background-color: rgba(0,0,0,0.6);
+    // background-color: rgba(0,0,0,0.2);
+    padding: 4.5rem 1.25rem 0rem;
   }
 }
 
@@ -28,9 +41,9 @@ $cardHeaderBGSocials: #91BCE6;
   .modules &{
     background: $cardHeaderBGModules;
   }
-  .socials &{
-    background: $cardHeaderBGSocials;
-  }
+//   .socials &{
+//     background: $cardHeaderBGSocials;
+//   }
 
   i, span{
     font-size: 40px !important;
@@ -56,7 +69,7 @@ $cardHeaderBGSocials: #91BCE6;
   box-shadow: 0 3px 10px #ccc;
 }
 
-.alert{
+.tutorial-alert{
   display: none;
   &.display{
     display: block;
