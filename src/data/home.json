@@ -1,0 +1,34 @@
+{
+  "links": [
+    {
+      "icon": "<i class=\"bi bi-hdd-stack\"></i>",
+      "title": "Studenthosting Wiki",
+      "description": "Tijdens de opleiding kun je gebruik maken van jouw persoonlijke hosting, waarop je PHP kunt draaien en een eigen database hebt.",
+      "link": "index.html?p=studhosting"
+    },
+    {
+      "icon": "<i class=\"bi bi-wordpress\"></i>",
+      "title": "WordPress Wiki",
+      "description": "Tijdens de opleiding van CMGT werk je met een WordPress blog. Hier worden de meest gestelde vragen beantwoord.",
+      "link": "index.html?p=wordpress"
+    },
+    {
+      "icon": "<i class=\"bi bi-motherboard\"></i>",
+      "title": "FabLab Making Wiki",
+      "description": "Veelgestelde vragen en overzicht aan handige tools voor het keuzevak FabLab making.",
+      "link": "index.html?p=fablab"
+    },
+    {
+      "icon": "<i class=\"bi bi-github\"></i>",
+      "title": "CMGT GitHub account",
+      "description": "Op het GitHub account van CMGT kun je lesmateriaal en verschillende projecten vinden binnen de opleiding.",
+      "link": "https://github.com/HR-CMGT"
+    },
+    {
+      "icon": "<i class=\"bi bi-person-circle\"></i>",
+      "title": "Persoonlijke website",
+      "description": "Vind mijn persoonlijke website op dit adres!",
+      "link": "https://ldegoeij.nl"
+    }
+  ]
+}

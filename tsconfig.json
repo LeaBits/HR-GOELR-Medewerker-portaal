@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "strict": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictPropertyInitialization": false,
+        "target": "es6",
+        "module": "esnext",
+        "sourceMap": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "moduleResolution": "node",
+        "lib": [
+            "es6",
+            "dom"
+        ]
+    },
+    "include": [
+        "./src/**/*",
+        "globals.d.ts"
+    ]
+}

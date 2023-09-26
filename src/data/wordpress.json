@@ -1,0 +1,42 @@
+{
+  "info": "Heb je problemen met de <strong>studenthosting</strong> i.p.v. <strong>WordPress</strong>? <a href=\"studhosting.php\">Klik dan hier!</a>",
+  "alert": "<strong>Update! Update! Update!</strong> Een hoop problemen voorkom je door WordPress regelmatig te updaten. Ook alle <u>thema's</u> en <u>plugins</u>.",
+  "tutorial": [
+    {
+      "question": "Ik krijg een 'Verouderde WordPress Pagina'-melding!",
+      "answerHTML": "<img src=\"./images/wordpress/oudewordpress.png\" class=\"responsive\"/><br/>Krijg je deze melding, zodra je jouw WordPress installatie probeert te bereiken?<ol><li>Login op jouw hosting.</li><li>Zoek naar een bestandje met de naam: <code>blocked_please_update_wordpress</code> (of iets vergelijkbaars) en verwijder deze.</li><li>Open de website in de browser en ga naar het adminpaneel.</li><li>Voer een update uit.</li></ol>",
+      "link": "verouderd",
+      "tags": ["hosting", "server"]
+    },
+    {
+      "question": "Ik kan niet meer inloggen (en wachtwoord resetten doet het niet)!",
+      "answerHTML": "Probeer op je website het volgende:<ol><li>Ga naar: <a href=\"https://thrivewp.com/wordpress-admin-login-not-working/#password\" target=\"_blank\">https://thrivewp.com/wordpress-admin-login-not-working/#password</a></li><li>Zoek in de pagina naar 'Before you do anything, it is always good you back up the site.'</li><li>En volg de stappen op die website</li></ol>",
+      "link": "nietinloggen",
+      "tags": ["admin"]
+    },
+    {
+      "question": "Ik kan niet updaten! (handtekening/signature error)",
+      "answerHTML": "Probeer je een update te draaien, maar krijg je een error over het niet kunnen verifieren van een handtekening (signature)? Dan kun je het beste handmatig een update draaien.<br/>Een tutorial voor het handmatig updaten kun je <a href=\"https://wordpress.org/support/article/updating-wordpress/#manual-update\" target=\"_blank\">hier vinden</a>.",
+      "link": "signature",
+      "tags": ["admin", "hosting", "server"]
+    },
+    {
+      "question": "Mijn blog staat op /wordpress",
+      "answerHTML": "Mocht je wordpress hebben geinstalleerd met een extra wordpress directory(map) in jouw adres, dus heb je:<br/><code>http://stud.hosted.hr.nl/[studentnummer]/wordpress</code><br/>In plaats van:<br/><code>http://stud.hosted.hr.nl/[studentnummer]/</code><br/>Plaats dan direct in je root (public.www map) een nieuw bestand, genaamd index.html, met de volgende inhoud:<br/><code>&lt;script&gt; window.location.href = \"wordpress\"; &lt;/script&gt;</code>",
+      "link": "urlverkeerd",
+      "tags": ["hosting", "server"]
+    },
+    {
+      "question": "Ik wil een site draaien naast mijn blog",
+      "answerHTML": "Ga je een site maken voor CLE? En is het je niet duidelijk hoe je de bestanden van jouw site op je studentenhosting kan zetten (naast WordPress)?<ol><li>m dit te kunnen heb je weer toegang nodig tot de server d.m.v. FileZilla (of een ander FTP programma).</li><li>Maak in de root (de <strong>public.www</strong> map) een nieuwe map aan. De map komt te staan naast <strong>wp-includes, wp-content, etc.</strong> (Mocht je WordPress hebben geinstalleerd in een diepere <strong>wordpress</strong> map, maak je een nieuwe map naast de <strong>wordpress</strong> map deze aan).</li><li>Noem deze map bijvoorbeeld <strong>cle1onepager</strong> (of andere duidelijke naam).</li><li>In deze map kun je jouw HTML bestanden, javascript bestanden, CSS bestanden en plaatjes plaatsen.</li><li>Zodra je de map hebt aangemaakt kun je deze benaderen door in de browser te gaan naar:<br/><code>http://stud.hosted.hr.nl/[STUDNR]/cle1onepager</code></li></ol>",
+      "link": "meerdere",
+      "tags": ["hosting", "server"]
+    },
+    {
+      "question": "Ik wil mijn posts (berichten) categoriseren per CLE.",
+      "answerHTML": "Categorieën zijn nuttig om te gebruiken voor jouw posts (berichten), Lees in de volgende tutorial hoe je deze aanmaakt, gebruikt en er een passende link voor aanmaakt in je navigatie:<br/><a href=\"https://www.wpbeginner.com/glossary/category/\" target=\"_blank\">https://www.wpbeginner.com/glossary/category/</a>",
+      "link": "categorie",
+      "tags": ["admin"]
+    }
+  ]
+}

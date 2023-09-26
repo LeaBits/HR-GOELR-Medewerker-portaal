@@ -1,7 +1,13 @@
 .sass-cache/
+.parcel-cache
+
 *.css.map
-css/main.css.map
+*.js.map
+*.map
+*.css
+
 .idea/*
 .idea/
-*.css
 vendor/*
+node_modules/*
+docs/*
