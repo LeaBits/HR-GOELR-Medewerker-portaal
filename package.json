@@ -1,0 +1,11 @@
+{
+  "name": "hr-goelr-medewerker-portaal",
+  "version": "1.0.0",
+  "description": "http://med.hosted.hr.nl/goelr",
+  "main": "src/js/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,59 @@
+container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+header{
+    padding: 10px;
+    text-align: center;
+    min-height: 500px;
+}
+
+nav{
+    span{
+        display: block;
+        margin: 20px 0px 0px;
+        font-weight: bold;
+    }
+
+    li{
+        margin: 5px 0px;
+    }
+}
+
+main{
+    background-image: url('../images/wave.gif');
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: auto 100px;
+    padding: 10px 10px 60px;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+
+    img, p{
+        max-width: 100%;
+        width:600px;
+    }
+}
+
+h1{
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+h2{
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: blue;
+    &:hover{
+        text-decoration: underline;
+    }
+    &.active{
+        font-weight: bold;
+    }
+}
