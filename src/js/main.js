@@ -15,8 +15,8 @@ function init(){
     mainElement = document.getElementsByTagName('main')[0];
     mainElement.innerHTML = "";
 
-    // console.log(page);
-    // console.log(query);
+    console.log(page);
+    console.log(query);
 
     activateLink();
 
@@ -33,7 +33,14 @@ function activateLink(){
         activeItems[i].classList.remove('active');
     }
 
-    document.getElementById(page).classList.add('active');
+    let linkElement = document.getElementById(page);
+    // fallback for home
+    if(linkElement === null){
+        linkElement = document.getElementById("home");
+    }
+    if(linkElement !== null){
+        linkElement.classList.add('active');
+    }
 }
 
 function createWiki(url){
@@ -53,6 +60,8 @@ function createWikiContent(){
     console.log(wikiData);
 
     let nav = document.createElement('ul');
+    nav.classList.add('nav'); // bootstrap class
+    nav.classList.add('flex-column'); // bootstrap class
     mainElement.appendChild(nav);
 
     let content = document.createElement('content');
@@ -61,17 +70,22 @@ function createWikiContent(){
     for(let i = 0; i < wikiData.tutorial.length; i++){
         // nav list item
         let listItem = document.createElement('li');
+        listItem.classList.add('nav-item'); // bootstrap class
         nav.appendChild(listItem);
 
         // nav link
         let link = document.createElement('a');
         link.innerText = wikiData.tutorial[i].question;
         link.href = `?page=${page}&query=${wikiData.tutorial[i].link}`;
+        link.classList.add('nav-link'); // bootstrap class
         listItem.appendChild(link);
 
         // content
         let question = document.createElement('question');
         question.id = wikiData.tutorial[i].link;
+        question.classList.add('card'); // bootstrap class
+        question.classList.add('mt-4');
+        question.classList.add('mb-4');
         content.appendChild(question);
 
         if(query === wikiData.tutorial[i].link){
@@ -80,10 +94,12 @@ function createWikiContent(){
 
         let title = document.createElement('h2');
         title.innerText = wikiData.tutorial[i].question;
+        title.classList.add('card-header'); // bootstrap class
         question.appendChild(title);
 
         let answer = document.createElement('answer');
         answer.innerHTML = wikiData.tutorial[i].answerHTML;
+        answer.classList.add('card-body'); // bootstrap class
         question.appendChild(answer);
     }
 
